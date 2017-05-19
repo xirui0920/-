@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <changeSet id="20170421" author="xirui">
+        <createTable tableName="w_user">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="schoolcode" type="varchar(50)" >
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="password" type="varchar(60)"></column>
+            <column name="nickname" type="varchar(50)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="imageUrl" type="varchar(256)"/>
+            <column name="sex" type="varchar(4)"/>
+            <column name="school" type="varchar(16)"/>
+
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

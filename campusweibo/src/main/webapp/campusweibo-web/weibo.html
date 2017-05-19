@@ -1,0 +1,206 @@
+<div class="container" ng-controller="weiboController" ng-style="{'background':'url(assets/img/backgrounds/7.jpg)','position':'relative','width':'100vw','height':'100vh','background-position':'center center','background-size':'cover','background-repeat':'no-repeat'}">
+    <!--头部-->
+    <div class="row clearfix">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- topDIV 开始 -->
+                <div class="col-md-2 column">
+                    <!-- topLogo部分的icoDIV -->
+                    <a href="#/weibo"><img src="assets/ico/fav.png" width="40" height="40" /></a>
+                    <strong>校园微博</strong>
+                </div>
+                <form class="navbar-form navbar-center" role="search">
+                    <div class="col-md-4 column">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="search">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" >
+                                        搜索
+                                    </button>
+                                </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </form>
+                <div class="col-md-6 column">
+                    <!-- top部分的文字导航 -->
+                    <div id="topWordMenu" align="right">
+                        <ul class="list-unstyled list-inline">
+                            <li><a class="list-group-item" href="#/weibo" ><span class="fa fa-home fa-fw"></span>&nbsp; 首页</a></li>
+                            <li><a class="list-group-item" href="#"><i class="fa fa-user"></i>&nbsp; 我的好友</a></li>
+                            <li><a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; 设置</a></li>
+                        </ul>
+                    </div>
+                    <!-- top部分的文字导航结束 -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--main-->
+    <div class="row clearfix" ng-style="{'padding-top':'70px'}">
+
+        <div class="col-md-2 column">
+            <!--空-->
+        </div>
+        <!--左侧栏-->
+        <div class="col-md-5 column" ng-style="{'background':'#FFFFFF'}">
+            <div id="mainBanner">
+                <!-- 发布微博框 -->
+                <div class="row">
+                    <div class="col-md-12 column">
+                        <div id="mainBannerTop">
+                            <!--id=mainBannerTopIssue 发布框-->
+                            <div id="mainBannerTopIssue">
+                                <!--id=mainBannerTopIssuePoint 提示-->
+                                <div id="mainBannerTopIssuePoint" align="left">有什么新鲜事想告诉大家?
+                                </div>
+                                <div style="float:right;">您还可以输入<font id="counter1">140</font>字！
+                                </div>
+                                <form action="" method="" id="">
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column">
+                                            <div id="mainBannerTopIssueFrame">
+                                                <textarea name="textfield1" rows="4" class="Size" id="textfield2"  style="overflow:hidden;border:1px #0CF solid;" onkeyup="calNum(this,counter1,0)"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="mainBannerTopIssueForm">
+                                        <div class="row clearfix">
+                                            <div id="mainBannerTopIssueInsert" class="col-md-6 column">
+                                                <i class="fa fa-image"></i>
+                                                <!--预留图片上传功能-->
+                                            </div>
+                                            <div id="mainBannerTopIssueSure" class="col-md-6 column">
+                                                <div id="mainBannerTopIssueSure2" align="right">
+                                                    <input class="btn btn-primary btn-sm" type="button" name="button1" id="button1" value="发布" onclick="submitState()" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--微博标题头-->
+                <div class="row">
+                    <div class="col-md-12 column">
+                        <div id="mainBannerTitle">
+                            <!--id="mainBannerTitleWord"-->
+                            <div id="mainBannerTitleWord" align="left">
+                                <b>微博</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--微博列表-->
+                <div class="row">
+                    <div class="col-md-12 column">
+                        <div id="mainBannerContent">
+                            <!--微博展示-->
+                            <div class="stateShow" onmouseover="stateMouseOver(this)" onmouseout="stateMouseOut(this)">
+                                <div class="stateShowWord">
+                                    <table  width="450" border="0" cellpadding="0" cellspacing="0" class="table table-hover">
+                                        <tr>
+                                            <td width="70" align="center" valign="top"><a href="#">
+                                                <img src="images/avatar.jpg" alt="" width="48" height="48" /></a>
+                                            </td>
+                                            <td width="380" ><img src="" align="absmiddle" style="border:none;" />
+                                                超模琳达·伊万格丽斯塔为四岁的儿子向他的父亲、法国亿万富翁弗朗索瓦-亨利·皮诺特索要每月4.6万美元的抚养费
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="stateShowtime" align="right"> 07月31日 08:02 </div>
+                                <div class="stateOp">
+                                    <a class="btn" onclick=""><i class="fa fa-comment"></i>&nbsp; 评论</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--右侧栏-->
+        <div class="col-md-2 column" ng-style="{'background':'#F8F8FF','margin-left':'5px'}" >
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div id="mainRight">
+                        <table class="table table-hover">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <!-- 右侧mainRightPostionFirstLine DIV 开始 -->
+                                    <div id="mainRightPostionFirstLine">
+                                        <!-- 右侧mainRightPostionFirstLineIcon DIV 开始 -->
+                                        <div style="height:58px;">
+                                            <div id="mainRightPostionFirstLineIcon">
+                                                <a href="#/myweibo"><img src="images/avatar.jpg" alt="" width="48" height="48"  border="0" /></a>
+                                                <br>
+                                                <span>你别过来</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- 右侧mainRightPostionFirstLineWord2 DIV 开始 -->
+                                    <div id="mainRightPostionFirstLineWord2">
+                                        <ul class="list-inline">
+                                            <li class="list-item">
+                                                <a href="#">
+                                                    <strong>60</strong>
+                                                    <br>
+                                                    <span>关注</span>
+                                                </a>
+                                            </li>
+                                            |
+                                            <li>
+                                                <a href="#">
+                                                    <strong>1</strong>
+                                                    <br>
+                                                    <span>粉丝</span>
+                                                </a>
+                                            </li>
+                                            |
+                                            <li>
+                                                <a href="#/myweibo">
+                                                    <strong>1</strong>
+                                                    <br>
+                                                    <span>微博</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><!-- 右侧mainRightPostionSeventhLine DIV 开始 -->
+                                    <div id="mainRightPostionSeventhLine" >
+                                        <div id="mainRightPositionSevenLineContent">
+                                            <a  class="btn">给我提意见</a>
+                                            <br />
+                                            <a  class="btn" onclick="set()" >不良信息举报中心</a>
+                                        </div>
+                                    </div>
+                                    <!-- 右侧mainRightPostionSeventhLine DIV 结束 -->
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 column">
+            <!--空-->
+        </div>
+
+    </div>
+
+</div>
