@@ -22,7 +22,7 @@
             <column name="nickname" type="varchar(50)">
                 <constraints unique="true" nullable="false"/>
             </column>
-            <column name="imageUrl" type="varchar(256)"/>
+            <column name="image_url" type="varchar(256)"/>
             <column name="sex" type="varchar(4)"/>
             <column name="school" type="varchar(16)"/>
 

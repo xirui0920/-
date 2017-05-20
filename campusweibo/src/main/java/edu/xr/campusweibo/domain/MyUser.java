@@ -17,7 +17,7 @@ import java.io.Serializable;
 public class MyUser implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -37,8 +37,8 @@ public class MyUser implements Serializable {
 
 
     @Size(max = 256)
-    @Column(length = 256)
-    private String imageUrl;
+    @Column(name = "image_url",length = 256)
+    private String image_url;
 
     @Size(max=4)
     @Column(length = 4)
@@ -80,12 +80,12 @@ public class MyUser implements Serializable {
         this.nickname = nickname;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getImage_url() {
+        return image_url;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
     }
 
     public String getSex() {
@@ -115,7 +115,7 @@ public class MyUser implements Serializable {
         if (schoolcode != null ? !schoolcode.equals(myUser.schoolcode) : myUser.schoolcode != null) return false;
         if (password != null ? !password.equals(myUser.password) : myUser.password != null) return false;
         if (nickname != null ? !nickname.equals(myUser.nickname) : myUser.nickname != null) return false;
-        if (imageUrl != null ? !imageUrl.equals(myUser.imageUrl) : myUser.imageUrl != null) return false;
+        if (image_url != null ? !image_url.equals(myUser.image_url) : myUser.image_url != null) return false;
         if (sex != null ? !sex.equals(myUser.sex) : myUser.sex != null) return false;
         return school != null ? school.equals(myUser.school) : myUser.school == null;
     }
@@ -126,7 +126,7 @@ public class MyUser implements Serializable {
         result = 31 * result + (schoolcode != null ? schoolcode.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (nickname != null ? nickname.hashCode() : 0);
-        result = 31 * result + (imageUrl != null ? imageUrl.hashCode() : 0);
+        result = 31 * result + (image_url != null ? image_url.hashCode() : 0);
         result = 31 * result + (sex != null ? sex.hashCode() : 0);
         result = 31 * result + (school != null ? school.hashCode() : 0);
         return result;
@@ -139,7 +139,7 @@ public class MyUser implements Serializable {
             ", schoolcode='" + schoolcode + '\'' +
             ", password='" + password + '\'' +
             ", nickname='" + nickname + '\'' +
-            ", imageUrl='" + imageUrl + '\'' +
+            ", image_url='" + image_url + '\'' +
             ", sex='" + sex + '\'' +
             ", school='" + school + '\'' +
             '}';
