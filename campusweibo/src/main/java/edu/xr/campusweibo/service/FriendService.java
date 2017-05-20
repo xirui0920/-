@@ -40,4 +40,16 @@ public class FriendService {
         }
         return list;
     }
+
+    public void addFriend(Friend friend){
+        friendRepository.save(friend);
+    }
+
+    public boolean isExist(Friend friend){
+        Friend flag = friendRepository.findByUidAndFuid(friend.getUid(),friend.getFuid());
+        if (flag == null){
+            return true;
+        }
+        return false;
+    }
 }

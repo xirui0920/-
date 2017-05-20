@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface FriendRepository extends JpaRepository<Friend,Long> {
     List<Friend> findAllByUid(Long id);
+    Friend findByUidAndFuid(Long uid,Long fuid);
 }

@@ -1,8 +1,13 @@
 package edu.xr.campusweibo.web.rest;
 
 import edu.xr.campusweibo.config.Constants;
+import edu.xr.campusweibo.domain.Friend;
 import edu.xr.campusweibo.domain.MyUser;
+import edu.xr.campusweibo.domain.Weibo;
+import edu.xr.campusweibo.service.FriendService;
 import edu.xr.campusweibo.service.LoginService;
+import edu.xr.campusweibo.service.WeiboService;
+import edu.xr.campusweibo.service.dto.WeiboDTO;
 import edu.xr.campusweibo.web.rest.util.ResponseData;
 import edu.xr.campusweibo.web.rest.util.ResponseResult;
 import org.slf4j.Logger;
@@ -12,6 +17,10 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -23,14 +32,67 @@ public class LoginResource {
 
     private final Logger log = LoggerFactory.getLogger(LoginResource.class);
 
-    @Autowired
-    private LoginService loginService;
+    private final LoginService loginService;
 
+    private final WeiboService weiboService;
 
+    private final FriendService friendService;
+
+    public LoginResource(LoginService loginService,WeiboService weiboService,FriendService friendService){
+        this.loginService = loginService;
+        this.weiboService = weiboService;
+        this.friendService = friendService;
+    }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseResult login(HttpServletRequest request, HttpServletResponse response) throws Exception{
+    public Map<String, Object> login(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        log.info("用户开始登陆...................");
+        Map<String, Object> returnMap = new HashMap<>();
+        String schoolcode = request.getParameter("schoolcode");
+        String password = request.getParameter("password");
+        if (!StringUtils.hasText(schoolcode) || !StringUtils.hasText(password)){
+            log.info("login信息异常");
+            returnMap.put("returnCode",Constants.FAIL_CODE);
+            returnMap.put("returnInfo",Constants.LOGIN_USERNAME_OR_PASSWORD_IS_BLANK);
+            return returnMap;
+        }
+        log.info("开始登陆，登陆学号为 = " + schoolcode);
+        MyUser u = null;
+        try {
+            u = loginService.findBySchoolcodeAndPassword(schoolcode,password);
+        }catch (Exception e){
+            log.info("登陆异常:",e);
+            returnMap.put("returnCode",Constants.FAIL_CODE);
+            returnMap.put("returnInfo",Constants.LOGIN_OCCUR_EXCEPTION);
+            return returnMap;
+        }
+        if (u == null){
+            log.info("登陆异常");
+            returnMap.put("returnCode",Constants.FAIL_CODE);
+            returnMap.put("returnInfo",Constants.LOGIN_USER_NOT);
+            return returnMap;
+        }
+        log.info("用户登陆成功.....");
+        request.getSession().setAttribute(Constants.SEESION_STORE_USERINFO_KEY,u);
+        returnMap.put("returnCode",Constants.SUCCESS_CODE);
+        returnMap.put("returnInfo",Constants.SUCCESS_INFO);
+        returnMap.put("data",u);
+        returnMap.put("weibonum",weiboService.getWeiboNum(u.getId()));
+        returnMap.put("frenum",friendService.getFridNum(u.getId()));
+        List<Friend> friendList = friendService.getAllFrid(u.getId());
+        List<WeiboDTO> listDTO = new ArrayList<>();
+        for (int i = 0;i < friendList.size();i++){
+            List<Weibo> newweiboList = weiboService.getAllWeibo(friendList.get(i).getFuid());
+            for (int j=0;j < newweiboList.size();j++){
+                listDTO.add(new WeiboDTO(newweiboList.get(j),loginService.getUserById(friendList.get(i).getFuid()).getNickname()));
+            }
+        }
+        returnMap.put("weiboinfo",listDTO);
+        return returnMap;
+    }
+
+/*    public ResponseResult login(HttpServletRequest request, HttpServletResponse response) throws Exception{
         log.info("用户开始登陆...................");
         String schoolcode = request.getParameter("schoolcode");
         String password = request.getParameter("password");
@@ -53,7 +115,7 @@ public class LoginResource {
         log.info("用户登陆成功.....");
         request.getSession().setAttribute(Constants.SEESION_STORE_USERINFO_KEY,u);
         return new ResponseData<MyUser>(Constants.SUCCESS_CODE,Constants.SUCCESS_INFO,u);
-    }
+    }*/
 
     // 用户注销
     @RequestMapping(value = "/logout", method = RequestMethod.POST)

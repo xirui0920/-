@@ -41,7 +41,7 @@ public class LoginFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse)servletResponse;
         response.setHeader("Access-Control-Allow-Origin","*");
         response.setHeader("Access-Control-Allow-Methods","POST");
-        response.setHeader("Access-Control-Allow-Headers","x-requested-with,content-type");
+        response.setHeader("Access-Control-Allow-Headers","x-requested-with,content-type,userId");
         servletRequest.setCharacterEncoding("UTF-8");
         servletResponse.setCharacterEncoding("UTF-8");
         //配合登录需要创建session，保存用户的登录状态
@@ -73,18 +73,18 @@ public class LoginFilter implements Filter {
             servletResponse.getWriter().write(JsonUtil.toJson(new ResponseResult(Constants.FAIL_CODE, Constants.SESSION_TIMEOUT_OR_NO_AUTHORITY)));
             return;
         }
-        if (session.getAttribute(Constants.SEESION_STORE_USERINFO_KEY) == null) {
-            logger.info("not find userInfo in session,so return back!");
-            servletResponse.setContentType("application/json; charset=utf-8");
-            servletResponse.getWriter().write(JsonUtil.toJson(new ResponseResult(Constants.FAIL_CODE, Constants.SESSION_TIMEOUT_OR_NO_AUTHORITY)));
-            return;
-        }
-        MyUser user = null;
-        try {
-            user = (MyUser) session.getAttribute(Constants.SEESION_STORE_USERINFO_KEY);
-        } catch (ClassCastException e) {
-            logger.error("get session store object cast to MsUser appear ClassCastException!", e);
-        }
+//        if (session.getAttribute(Constants.SEESION_STORE_USERINFO_KEY) == null) {
+//            logger.info("not find userInfo in session,so return back!");
+//            servletResponse.setContentType("application/json; charset=utf-8");
+//            servletResponse.getWriter().write(JsonUtil.toJson(new ResponseResult(Constants.FAIL_CODE, Constants.SESSION_TIMEOUT_OR_NO_AUTHORITY)));
+//            return;
+//        }
+//        MyUser user = null;
+//        try {
+//            user = (MyUser) session.getAttribute(Constants.SEESION_STORE_USERINFO_KEY);
+//        } catch (ClassCastException e) {
+//            logger.error("get session store object cast to MsUser appear ClassCastException!", e);
+//        }
         Long userId = null;
         try {
             userId = Long.parseLong(userIdStr);
@@ -92,14 +92,14 @@ public class LoginFilter implements Filter {
             logger.error("parse userId  = " + userIdStr + " to long type appear number format exception!", e);
         }
 
-        if (user != null && user.getId() == userId) {
-            filterChain.doFilter(servletRequest, servletResponse);
-            return;
-        }
-        logger.info("this access url is not authoriezd，so return back.");
-        servletResponse.setContentType("application/json; charset=utf-8");
-        servletResponse.getWriter().write(JsonUtil.toJson(new ResponseResult(Constants.FAIL_CODE, Constants.SESSION_TIMEOUT_OR_NO_AUTHORITY)));
+//        if (user != null && user.getId() == userId) {
+        filterChain.doFilter(servletRequest, servletResponse);
         return;
+//        }
+//        logger.info("this access url is not authoriezd，so return back.");
+//        servletResponse.setContentType("application/json; charset=utf-8");
+//        servletResponse.getWriter().write(JsonUtil.toJson(new ResponseResult(Constants.FAIL_CODE, Constants.SESSION_TIMEOUT_OR_NO_AUTHORITY)));
+//        return;
     }
 
     @Override

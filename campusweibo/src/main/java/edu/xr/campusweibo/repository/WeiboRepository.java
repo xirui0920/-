@@ -10,4 +10,5 @@ import java.util.List;
  */
 public interface WeiboRepository extends JpaRepository<Weibo,Long> {
     List<Weibo> findAllByUid(Long id);
+    Weibo findByTextAndUid(String text,Long uid);
 }

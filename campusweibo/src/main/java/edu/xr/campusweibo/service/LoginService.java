@@ -21,4 +21,8 @@ public class LoginService {
     public MyUser findBySchoolcodeAndPassword(String schoolcode,String password){
         return myUserRepository.findBySchoolcodeAndPassword(schoolcode,password);
     }
+
+    public MyUser getUserById(Long id){
+        return myUserRepository.findById(id);
+    }
 }

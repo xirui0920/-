@@ -9,4 +9,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface MyUserRepository  extends JpaRepository<MyUser,Long>{
     MyUser findBySchoolcode(String schoolcode);
     MyUser findBySchoolcodeAndPassword(String schoolcode,String password);
+    MyUser findById(Long id);
 }

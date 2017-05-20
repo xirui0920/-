@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 
@@ -39,6 +40,24 @@ public class WeiboService {
         return list;
     }
 
+    public Weibo getWeiboByText(String text,Long uid){
+        return weiboRepository.findByTextAndUid(text,uid);
+    }
+
+    public void addWeibo(Weibo weibo){
+        if (StringUtils.isEmpty(weibo.getText()) || StringUtils.isEmpty(weibo.getUid()) ){
+            logger.info("微博信息不完整，拒绝发布");
+            return;
+        }
+        Weibo addWeibo = new Weibo();
+        addWeibo.setText(weibo.getText());
+        addWeibo.setUid(weibo.getUid());
+        try {
+            weiboRepository.save(addWeibo);
+        }catch (Exception e){
+            logger.info("发布失败============");
+        }
+    }
 
 
 }

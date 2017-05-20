@@ -48,6 +48,8 @@ public final class Constants {
     //成功信息
     public final static String SUCCESS_INFO = "0000";
 
+    public final static String FAIL_INFO= "1111";
+
     private Constants() {
     }
 }
