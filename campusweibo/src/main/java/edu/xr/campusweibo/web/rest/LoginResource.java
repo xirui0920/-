@@ -26,6 +26,8 @@ public class LoginResource {
     @Autowired
     private LoginService loginService;
 
+
+
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public ResponseResult login(HttpServletRequest request, HttpServletResponse response) throws Exception{
