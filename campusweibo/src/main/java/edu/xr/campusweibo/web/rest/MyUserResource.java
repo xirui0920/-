@@ -51,6 +51,7 @@ public class MyUserResource {
                 //更新用户
                 try {
                     myUserService.saveUser(myUser);
+                    return new ResponseResult(Constants.SUCCESS_CODE,Constants.SUCCESS_INFO);
                 }catch (Exception e){
                     log.info("更新用户异常");
                     return new ResponseResult(Constants.FAIL_CODE,Constants.USER_ADD_UPDATE_EXP);

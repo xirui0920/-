@@ -7,6 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 
 @Entity
@@ -28,7 +29,7 @@ public class Weibo implements Serializable {
 
     @CreatedDate
     @Column(name = "create_date", nullable = false)
-    private ZonedDateTime createDate = ZonedDateTime.now();
+    private LocalDateTime createDate = LocalDateTime.now();
 
     public Long getId() {
         return id;
@@ -54,11 +55,11 @@ public class Weibo implements Serializable {
         this.uid = uid;
     }
 
-    public ZonedDateTime getCreateDate() {
+    public LocalDateTime getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(ZonedDateTime createDate) {
+    public void setCreateDate(LocalDateTime createDate) {
         this.createDate = createDate;
     }
 

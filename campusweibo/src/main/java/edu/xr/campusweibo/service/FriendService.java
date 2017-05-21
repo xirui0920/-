@@ -41,6 +41,15 @@ public class FriendService {
         return list;
     }
 
+    public List<Friend> getAllFans(Long id){
+        List list = friendRepository.findAllByFuid(id);
+        if (list == null){
+            logger.info("未查到好友=============");
+            return null;
+        }
+        return list;
+    }
+
     public void addFriend(Friend friend){
         friendRepository.save(friend);
     }

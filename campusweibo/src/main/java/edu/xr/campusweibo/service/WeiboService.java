@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 /**
@@ -32,7 +35,7 @@ public class WeiboService {
     }
 
     public List<Weibo> getAllWeibo(Long id){
-        List list = weiboRepository.findAllByUid(id);
+        List<Weibo> list = weiboRepository.findAllByUid(id);
         if (list == null){
             logger.info("未查到微博=============");
             return null;

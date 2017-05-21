@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by xirui on 2017/5/20.
@@ -31,6 +33,26 @@ public class FriendResource {
     public FriendResource(FriendService friendService, MyUserService myUserService) {
         this.friendService = friendService;
         this.myUserService = myUserService;
+    }
+
+    @RequestMapping(value = "/friend/getAll/{id}",method = RequestMethod.GET)
+    public ResponseResult getAllFriend(@PathVariable(value = "id")Long id){
+        log.info("查找好友列表");
+        List<Friend> friendList = null;
+        List<MyUser> myUserList = new ArrayList<>();
+        try {
+            friendList = friendService.getAllFrid(id);
+            if (friendList != null){
+                for(Friend f : friendList){
+                    MyUser temp = myUserService.getUserById(f.getFuid());
+                    myUserList.add(temp);
+                }
+                return new ResponseData<List<MyUser>>(Constants.SUCCESS_CODE,Constants.SUCCESS_INFO,myUserList);
+            }
+            return new ResponseResult(Constants.FAIL_CODE,Constants.FAIL_INFO);
+        }catch (Exception e){
+            return new ResponseResult(Constants.FAIL_CODE,Constants.FAIL_INFO);
+        }
     }
 
     @RequestMapping(value = "/friend/search", method = RequestMethod.POST)
