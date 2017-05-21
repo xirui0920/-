@@ -13,13 +13,21 @@ app.config([
                 templateUrl:'weibo.html',
                 controller:'weiboController'
             })
-/*            .when('/register',{
+            .when('/register',{
                 templateUrl:'register.html',
                 controller:'registerController'
-            })*/
+            })
             .when('/myweibo',{
                 templateUrl:'myweibo.html',
                 controller:'myweiboController'
+            })
+            .when('/setting',{
+                templateUrl:'setting.html',
+                controller:'settingsController'
+            })
+            .when('/friend',{
+                templateUrl:'friend.html',
+                controller:'friendController'
             })
     }
 ]);

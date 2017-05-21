@@ -1,4 +1,4 @@
-<div class="container" ng-controller="myweiboController" ng-style="{'background':'url(assets/img/backgrounds/7.jpg)','position':'relative','width':'100vw','height':'100vh','background-position':'center center','background-size':'cover','background-repeat':'no-repeat'}">
+<div class="container" ng-controller="myweiboController" ng-style="{'background':'url(assets/img/backgrounds/7.jpg)','position':'relative','width':'100vw','background-position':'center center','background-size':'cover','background-repeat':'repeat-y'}">
     <!--头部-->
     <div class="row clearfix">
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -12,12 +12,12 @@
                 <form class="navbar-form navbar-center" role="search">
                     <div class="col-md-4 column">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="search">
+                            <input type="text" class="form-control" placeholder="search" ng-model="mysearchinfo" >
                             <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" >
+                                    <button class="btn btn-default" type="button" ng-click="searchfrid()" data-toggle="modal" data-target="#SearchModal">
                                         搜索
                                     </button>
-                                </span>
+                            </span>
                         </div><!-- /input-group -->
                     </div><!-- /.col-lg-6 -->
                 </form>
@@ -26,8 +26,8 @@
                     <div id="topWordMenu" align="right">
                         <ul class="list-unstyled list-inline">
                             <li><a class="list-group-item" href="#/weibo" ><span class="fa fa-home fa-fw"></span>&nbsp; 首页</a></li>
-                            <li><a class="list-group-item" href="#"><i class="fa fa-user"></i>&nbsp; 我的好友</a></li>
-                            <li><a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; 设置</a></li>
+                            <li><a class="list-group-item" href="#/friend"><i class="fa fa-user"></i>&nbsp; 我的好友</a></li>
+                            <li><a class="list-group-item" href="#/setting"><i class="fa fa-cog fa-fw"></i>&nbsp; 设置</a></li>
                         </ul>
                     </div>
                     <!-- top部分的文字导航结束 -->
@@ -40,6 +40,29 @@
 
         <div class="col-md-2 column">
             <!--空-->
+            <div class="modal fade" id="SearchModal" aria-labelledby="myModalLabel"  aria-hidden="true" role="dialog" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h5 class="modal-title" id="myModalLabel" style="color: black">
+                                {{searchresultinfo}}
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{{friendimg}}" alt="" width="48" height="48" />
+                            <br>
+                            {{friendinfo}}
+                        </div>
+                        <div class="modal-footer">
+                            <!--<a class="btn" data-dismiss="modal">关闭</a>-->
+                            <a class="btn" ng-click="addfriend()">加好友</a>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
         </div>
         <!--左侧栏-->
         <div class="col-md-5 column" ng-style="{'background':'#FFFFFF'}">
@@ -78,23 +101,25 @@
                     <div class="col-md-12 column">
                         <div id="mainBannerContent">
                             <!--微博展示-->
-                            <div class="stateShow" onmouseover="stateMouseOver(this)" onmouseout="stateMouseOut(this)">
+                            <div class="stateShow" onmouseover="stateMouseOver(this)" onmouseout="stateMouseOut(this)" ng-repeat="x in myweibolist">
                                 <div class="stateShowWord">
                                     <table  width="450" border="0" cellpadding="0" cellspacing="0" class="table table-hover">
                                         <tr>
-                                            <td width="70" align="center" valign="top"><a href="#">
-                                                <img src="images/avatar.jpg" alt="" width="48" height="48" /></a>
+                                            <td width="70" align="center" valign="top">
+                                                <!--<a href="#">-->
+                                                    <img src="{{cusimg}}" alt="" width="48" height="48" />
+                                                <!--</a>-->
+                                                <br>
+                                                {{cusname}}
                                             </td>
-                                            <td width="380" ><img src="" align="absmiddle" style="border:none;" />
-                                                生而为人，请务必善良。
+                                            <td width="380" >
+                                                <img src="" align="absmiddle" style="border:none;" />
+                                                {{x.weibo.text}}
                                             </td>
                                         </tr>
                                     </table>
                                 </div>
-                                <div class="stateShowtime" align="right"> 07月31日 08:02 </div>
-                              <!--  <div class="stateOp">
-                                    <a class="btn" onclick=""><i class="fa fa-comment"></i>&nbsp; 评论</a>
-                                </div>-->
+                                <div class="stateShowtime" align="right"> {{x.weibo.createDate}} </div>
                             </div>
                         </div>
                     </div>
@@ -105,7 +130,7 @@
         </div>
 
         <!--右侧栏-->
-        <div class="col-md-2 column" ng-style="{'background':'#F8F8FF','margin-left':'5px'}" >
+        <div class="col-md-2 column" ng-style="{'background':'#F8F8FF','margin-left':'5px','height':'550px'}" >
             <div class="row clearfix">
                 <div class="col-md-12 column">
                     <div id="mainRight">
@@ -118,9 +143,9 @@
                                         <!-- 右侧mainRightPostionFirstLineIcon DIV 开始 -->
                                         <div style="height:58px;">
                                             <div id="mainRightPostionFirstLineIcon">
-                                                <a href="#"><img src="images/avatar.jpg" alt="" width="48" height="48"  border="0" /></a>
+                                                <img src="{{cusimg}}" alt="" width="48" height="48"  border="0" />
                                                 <br>
-                                                <span>你别过来</span>
+                                                <span>{{cusname}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -132,19 +157,19 @@
                                     <div id="mainRightPostionFirstLineWord2">
                                         <ul class="list-inline">
                                             <li class="list-item">
-                                                <a href="#">
-                                                    <strong>1</strong>
+                                                <!--<a href="#">-->
+                                                    <strong>{{guanzhunum}}</strong>
                                                     <br>
                                                     <span>关注</span>
-                                                </a>
+                                                <!--</a>-->
                                             </li>
                                             |
                                             <li>
-                                                <a href="#">
-                                                    <strong>2</strong>
+                                                <!--<a href="#">-->
+                                                    <strong>{{fansnum}}</strong>
                                                     <br>
                                                     <span>粉丝</span>
-                                                </a>
+                                                <!--</a>-->
                                             </li>
                                         </ul>
                                     </div>
@@ -156,7 +181,7 @@
                                         <div id="mainRightPositionSevenLineContent">
                                             <a  class="btn">给我提意见</a>
                                             <br />
-                                            <a  class="btn" onclick="set()" >不良信息举报中心</a>
+                                            <a  class="btn">不良信息举报中心</a>
                                         </div>
                                     </div>
                                     <!-- 右侧mainRightPostionSeventhLine DIV 结束 -->

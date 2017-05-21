@@ -1,0 +1,190 @@
+<div class="container"
+     ng-controller="friendController"
+     ng-style="{'background':'url(assets/img/backgrounds/7.jpg)','position':'relative','width':'100vw','background-position':'center center','background-size':'cover','background-repeat':'repeat-y'}"
+>
+    <!--头部-->
+    <div class="row clearfix">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- topDIV 开始 -->
+                <div class="col-md-2 column">
+                    <!-- topLogo部分的icoDIV -->
+                    <a href="#/weibo"><img src="assets/ico/fav.png" width="40" height="40" /></a>
+                    <strong>校园微博</strong>
+                </div>
+                <form class="navbar-form navbar-center" role="search">
+                    <div class="col-md-4 column">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="search" ng-model="mysearchinfo" >
+                            <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" ng-click="searchfrid()" data-toggle="modal" data-target="#SearchModal">
+                                        搜索
+                                    </button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </form>
+                <div class="col-md-6 column">
+                    <!-- top部分的文字导航 -->
+                    <div id="topWordMenu" align="right">
+                        <ul class="list-unstyled list-inline">
+                            <li><a class="list-group-item" href="#/weibo" ><span class="fa fa-home fa-fw"></span>&nbsp; 首页</a></li>
+                            <li><a class="list-group-item" href="#/friend"><i class="fa fa-user"></i>&nbsp; 我的好友</a></li>
+                            <li><a class="list-group-item" href="#/setting"><i class="fa fa-cog fa-fw"></i>&nbsp; 设置</a></li>
+                        </ul>
+                    </div>
+                    <!-- top部分的文字导航结束 -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--main-->
+    <div class="row clearfix" ng-style="{'padding-top':'70px'}">
+
+        <div class="col-md-2 column">
+            <!--空-->
+            <div class="modal fade" id="SearchModal" aria-labelledby="myModalLabel"  aria-hidden="true" role="dialog" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h5 class="modal-title" id="myModalLabel" style="color: black">
+                                {{searchresultinfo}}
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{{friendimg}}" alt="" width="48" height="48" />
+                            <br>
+                            {{friendinfo}}
+                        </div>
+                        <div class="modal-footer">
+                            <!--<a class="btn" data-dismiss="modal">关闭</a>-->
+                            <a class="btn" ng-click="addfriend()">加好友</a>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+        </div>
+        <!--中间拦-->
+        <div class="col-md-7 column" ng-style="{'background':'#FFFFFF','height':'550px'}">
+            <div id="mainBanner">
+                <!--页头-->
+                <div class="row">
+                    <div class="col-md-12 column">
+                        <div id="mainBannerTop">
+                            <div id="mainBannerTopIssue">
+                                <div id="mainBannerMenuTopWord2">
+                                    <strong>
+                                        好友页
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--导航元素头-->
+                <div class="row">
+                    <div class="col-md-12 column">
+                        <div id="mainBannerTitle">
+                            <!--id="mainBannerTitleWord"-->
+                            <div id="mainBannerTitleWord" align="left">
+                                <strong>
+                                    好友列表
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--导航元素页-->
+                <div class="row">
+                    <div class="col-md-12 column">
+                        <ul class="list-unstyled list-inline">
+                            <li ng-repeat="x in friendlist">
+                                <img src="{{x.image_url}}" alt="" width="48" height="48" />
+                                <br>
+                                {{x.nickname}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--        &lt;!&ndash;右侧栏&ndash;&gt;
+                <div class="col-md-2 column" ng-style="{'background':'#F8F8FF','margin-left':'5px','height':'550px'}" >
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <div id="mainRight">
+                                <table class="table table-hover">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            &lt;!&ndash; 右侧mainRightPostionFirstLine DIV 开始 &ndash;&gt;
+                                            <div id="mainRightPostionFirstLine">
+                                                &lt;!&ndash; 右侧mainRightPostionFirstLineIcon DIV 开始 &ndash;&gt;
+                                                <div style="height:58px;">
+                                                    <div id="mainRightPostionFirstLineIcon">
+                                                        <img src="{{cusimg}}" alt="" width="48" height="48"  border="0" />
+                                                        <br>
+                                                        <span>{{cusname}}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &lt;!&ndash; 右侧mainRightPostionFirstLineWord2 DIV 开始 &ndash;&gt;
+                                            <div id="mainRightPostionFirstLineWord2">
+                                                <ul class="list-inline">
+                                                    <li class="list-item">
+                                                        &lt;!&ndash;<a href="#">&ndash;&gt;
+                                                        <strong>{{guanzhunum}}</strong>
+                                                        <br>
+                                                        <span>关注</span>
+                                                        &lt;!&ndash;</a>&ndash;&gt;
+                                                    </li>
+                                                    |
+                                                    <li>
+                                                        &lt;!&ndash;<a href="#">&ndash;&gt;
+                                                        <strong>{{fansnum}}</strong>
+                                                        <br>
+                                                        <span>粉丝</span>
+                                                        &lt;!&ndash;</a>&ndash;&gt;
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&lt;!&ndash; 右侧mainRightPostionSeventhLine DIV 开始 &ndash;&gt;
+                                            <div id="mainRightPostionSeventhLine" >
+                                                <div id="mainRightPositionSevenLineContent">
+                                                    <a  class="btn">给我提意见</a>
+                                                    <br />
+                                                    <a  class="btn">不良信息举报中心</a>
+                                                </div>
+                                            </div>
+                                            &lt;!&ndash; 右侧mainRightPostionSeventhLine DIV 结束 &ndash;&gt;
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+        <div class="col-md-3 column">
+            <!--空-->
+        </div>
+
+    </div>
+
+</div>

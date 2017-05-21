@@ -1,5 +1,5 @@
 
-<div class="top-content" ng-controller="loginController"  ng-style="{'background':'url(assets/img/backgrounds/6.jpg)','position':'relative','width':'100vw','height':'100vh','background-position':'center center','background-size':'cover','background-repeat':'no-repeat'}">
+<div class="top-content" ng-controller="loginController"  ng-style="{'background':'url(assets/img/backgrounds/6.jpg)','position':'relative','width':'100vw','background-position':'center center','background-size':'cover','background-repeat':'repeat-y'}">
 
     <div class="inner-bg">
         <div class="container">
@@ -50,9 +50,10 @@
                             </div>
                             <button  type="submit" class="btn" ng-click="login()" ng-disabled="form.$invalid">登陆</button>
                         </form>
-                        <a class="btn btn-link btn-lg" data-toggle="modal" data-target="#RegisterModal">点我注册</a>
+                        <a class="btn btn-link btn-lg" ng-href="#/register">点我注册</a>
+                        <!--<a class="btn btn-link btn-lg" data-toggle="modal" data-target="#RegisterModal">点我注册</a>-->
                         <!--注册模态框-->
-                        <div class="modal fade" id="RegisterModal" aria-labelledby="myModalLabel" aria-hidden="true"  data-keyboard="false">
+                        <!--<div class="modal fade" id="RegisterModal" aria-labelledby="myModalLabel" aria-hidden="true"  data-keyboard="false">
                             <div class="col-sm-4 col-sm-offset-4 form-box">
                                 <div class="form-top">
                                     <div class="form-top-left" >
@@ -68,6 +69,7 @@
                                             {{authregError}}</div>
                                         <div class="form-group">
                                             <input type="text"
+                                                   name="rschoolcode"
                                                    ng-model="regschoolcode"
                                                    placeholder="学号"
                                                    class="form-username form-control"
@@ -78,6 +80,7 @@
                                         </div>
                                         <div class="form-group">
                                             <input type="text"
+                                                   name="rnickname"
                                                    ng-model="regnickname"
                                                    placeholder="昵称"
                                                    class="form-control"
@@ -88,6 +91,7 @@
                                         </div>
                                         <div class="form-group">
                                             <input type="password"
+                                                   name="rpassword"
                                                    ng-model="regpassword"
                                                    placeholder="密码"
                                                    class="form-password form-control"
@@ -108,7 +112,7 @@
                                     </form>
                                  </div>
                              </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<div class="content" ng-controller="registerController" ng-style="{'background':'url(assets/img/backgrounds/6.jpg)','position':'relative','width':'100vw','height':'100vh','background-position':'center center','background-size':'cover','background-repeat':'no-repeat'}">
+<div class="content" ng-controller="registerController" ng-style="{'background':'url(assets/img/backgrounds/6.jpg)','position':'relative','width':'100vw','background-position':'center center','background-size':'cover','background-repeat':'repeat-y'}">
         <div class="inner-bg">
             <div class="container">
                 <div class="row">
@@ -11,12 +11,12 @@
                         </div>
                         <div class="form-bottom">
                             <form class="register-form" name="weiboregister">
-                                <div class="text-danger wrapper text-center" ng-show="authError">
-                                    {{authError}}</div>
+                                <div class="text-danger wrapper text-center" ng-show="authregError">
+                                    {{authregError}}</div>
                                 <div class="form-group">
                                     <input type="text"
-                                           name="schoolcode"
-                                           ng-model="user.schoolcode"
+                                           name="reschoolcode"
+                                           ng-model="schoolcode"
                                            placeholder="学号"
                                            class="form-username form-control"
                                            required
@@ -26,8 +26,8 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="text"
-                                           name="nickname"
-                                           ng-model="user.nickname"
+                                           name="renickname"
+                                           ng-model="nickname"
                                            placeholder="昵称"
                                            class="form-control"
                                            required
@@ -37,8 +37,8 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="password"
-                                           name="password"
-                                           ng-model="user.password"
+                                           name="repassword"
+                                           ng-model="password"
                                            placeholder="密码"
                                            class="form-password form-control"
                                            required
@@ -47,7 +47,7 @@
                                     >
                                 </div>
                                 <button type="submit" class="btn" ng-click="check()" >Submit</button>
-                                <a class="btn" ng-click="returnLogin()">返回</a>
+                                <a class="btn" ng-href="#/">返回</a>
                             </form>
                         </div>
                     </div>

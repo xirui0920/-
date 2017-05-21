@@ -2,10 +2,12 @@ package edu.xr.campusweibo.web.rest;
 
 import edu.xr.campusweibo.config.Constants;
 import edu.xr.campusweibo.domain.Friend;
+import edu.xr.campusweibo.domain.MyReply;
 import edu.xr.campusweibo.domain.MyUser;
 import edu.xr.campusweibo.domain.Weibo;
 import edu.xr.campusweibo.service.FriendService;
 import edu.xr.campusweibo.service.LoginService;
+import edu.xr.campusweibo.service.MyReplyService;
 import edu.xr.campusweibo.service.WeiboService;
 import edu.xr.campusweibo.service.dto.WeiboDTO;
 import edu.xr.campusweibo.web.rest.util.ResponseData;
@@ -38,10 +40,13 @@ public class LoginResource {
 
     private final FriendService friendService;
 
-    public LoginResource(LoginService loginService,WeiboService weiboService,FriendService friendService){
+    private final MyReplyService myReplyService;
+
+    public LoginResource(LoginService loginService, WeiboService weiboService, FriendService friendService, MyReplyService myReplyService) {
         this.loginService = loginService;
         this.weiboService = weiboService;
         this.friendService = friendService;
+        this.myReplyService = myReplyService;
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
@@ -82,10 +87,12 @@ public class LoginResource {
         returnMap.put("frenum",friendService.getFridNum(u.getId()));
         List<Friend> friendList = friendService.getAllFrid(u.getId());
         List<WeiboDTO> listDTO = new ArrayList<>();
+        List<MyReply> myReplyList = null;
         for (int i = 0;i < friendList.size();i++){
             List<Weibo> newweiboList = weiboService.getAllWeibo(friendList.get(i).getFuid());
             for (int j=0;j < newweiboList.size();j++){
-                listDTO.add(new WeiboDTO(newweiboList.get(j),loginService.getUserById(friendList.get(i).getFuid()).getNickname()));
+                myReplyList = myReplyService.getAllReply(newweiboList.get(i).getId());
+                listDTO.add(new WeiboDTO(newweiboList.get(j),loginService.getUserById(friendList.get(i).getFuid()).getNickname(),myReplyList));
             }
         }
         returnMap.put("weiboinfo",listDTO);

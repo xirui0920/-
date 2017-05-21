@@ -21,41 +21,75 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1900">
-              <caret line="100" column="99" lean-forward="false" selection-start-line="100" selection-start-column="99" selection-end-line="100" selection-end-column="99" />
+            <state relative-caret-position="-76">
+              <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weibo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="176" column="50" lean-forward="true" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#2724#2731#0" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#8327#8333#0" expanded="true" />
+                <element signature="e#9628#9635#0" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="342">
+              <caret line="195" column="5" lean-forward="true" selection-start-line="195" selection-start-column="5" selection-end-line="195" selection-end-column="5" />
+              <folding>
+                <element signature="e#179#1041#0" expanded="false" />
+                <element signature="e#1104#2173#0" expanded="false" />
+                <element signature="e#9370#14657#0" expanded="false" />
+                <element signature="e#10729#11760#0" expanded="false" />
+                <element signature="e#11807#12528#0" expanded="false" />
+                <element signature="e#14720#17327#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.js">
+      <file leaf-file-name="setting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="472">
+              <caret line="123" column="64" lean-forward="true" selection-start-line="123" selection-start-column="64" selection-end-line="123" selection-end-column="64" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#2736#2743#0" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#11156#14827#0" expanded="false" />
+                <marker date="1495381855715" expanded="false" signature="11923:11935" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,9 +99,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -77,7 +111,11 @@
       <find>h1</find>
       <find>form-top</find>
       <find>md</find>
+      <find>&lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt;     &lt;title&gt;demo&lt;/title&gt;     &lt;style&gt;         body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{             margin:0;padding:0;border:none; outline: none;         }         h1,h2,h3,h4,h5,h6{             font-size:100%;         }         address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover, a:visited, a:link, a:active{text-decoration:none;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:100%;}table{border-collapse:collapse;border-spacing:0;}.clear{clear: both;float: none;height: 0;overflow: hidden;}body{color:#333; font: 12px/1.3 'Arial','Microsoft YaHei';}#pn{width: 550px; height: auto; background: #fff; margin: 0 auto; padding: 20px;}.list0{padding: 20px 0; position: relative; border-top: 1px solid #eee;}.head{width: 60px; float: left;}.head img{width: 60px; height: 60px; }.close{width: 20px; height: 20px; position: absolute; top: 0; right: 0; color: #696e78; font-size: 14px; text-align: center; line-height: 20px;}.close:hover{color: #eb7350;}.content{width: 450px; line-height: 20px; font-size: 14px; margin-left: 70px; }.name{color: #eb7350; }.pic{margin: 5px 0;}.good:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}.good{*zoom:1;}.date{float:left; color: #808080;}.good a{float: right; color: #808080;}.people{background: #F7F7F7; height: 28px; line-height: 28px; padding-left: 10px; margin: 5px 0;}.comment:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}.comment{*zoom:1; padding: 10px 0; border-top: 1px solid #eee;}.comment-left{width: 30px; float: left; display: inline; margin-right: 10px;}.comment-left img{width: 30px; height: 30px;}.comment-right{float: left; width: 410px;}.comment-text{line-height: 18px;}.comment-text span{color:#eb7350;}.comment-date{font-size: 12px; line-height: 14px; color: #ccc; position: relative;}.comment-zan{position: absolute; right: 40px; bottom: 0; color: #808080;}.comment-dele{position: absolute; right: 0; bottom: 0; color: #808080;}.hf:after{clear:both;content:'';display:block;width:0;height:0;visibility:hidden;}.hf{*zoom:1;}.hf-text{ border: 1px solid #eee; display: block; height: 15px; width: 438px; padding: 5px; resize: none; color: #ccc; font-size:12px;}.hf-on .hf-text{height: 60px; color: #333; border:1px solid #ff8140;}.hf-btn{float: right; width: 65px; height: 26px; background: #f7f7f7; color: #ccc; font-size: 12px; display: none;}.hf-btn-on{background: #ff8140; color: #fff; }.hf-nub{float: right; padding: 3px 5px; color: #666; display: none;}.hf-on .hf-btn{display: inline;}.hf-on .hf-nub{display: inline;}&lt;/style&gt; &lt;/head&gt; &lt;body&gt;&lt;ul id=&quot;pn&quot;&gt;   &lt;li class=&quot;list0&quot;&gt;   &lt;a class=&quot;close&quot; href=&quot;javascript:;&quot;&gt;X&lt;/a&gt;   &lt;div class=&quot;head&quot;&gt;&lt;img src=&quot;images/T1.jpg&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;      &lt;div class=&quot;content&quot;&gt;   &lt;p class=&quot;text&quot;&gt;&lt;span class=&quot;name&quot;&gt;Andy：&lt;/span&gt;哈哈哈哈哈谁还没个妈～//@我的朋友是个呆B: 饮水机那个蕾丝罩我给跪了//@八卦_我实在是太CJ了:仿佛看到了自己家&lt;/p&gt;      &lt;div class=&quot;pic&quot;&gt;&lt;img src=&quot;images/img1.jpg&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;   &lt;div class=&quot;good&quot;&gt;&lt;span class=&quot;date&quot;&gt;02-14 23:01&lt;/span&gt;&lt;a class=&quot;dzan&quot; href=&quot;javascript:;&quot;&gt;赞&lt;/a&gt;&lt;/div&gt;   &lt;div class=&quot;people&quot; total=&quot;2980&quot;&gt;2980人觉得很赞&lt;/div&gt;   &lt;div class=&quot;comment-list&quot;&gt;   &lt;div class=&quot;comment&quot; user=&quot;self&quot;&gt;   &lt;div class=&quot;comment-left&quot;&gt;&lt;img src=&quot;images/T1.jpg&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;   &lt;div class=&quot;comment-right&quot;&gt;   &lt;div class=&quot;comment-text&quot;&gt;&lt;span class=&quot;user&quot;&gt;老王：&lt;/span&gt;我住隔壁我姓王&lt;/div&gt;   &lt;div class=&quot;comment-date&quot;&gt;02-14 22:00   &lt;a class=&quot;comment-zan&quot; href=&quot;javascript:;&quot; total=&quot;23&quot; my=&quot;1&quot;&gt;23 取消赞&lt;/a&gt;   &lt;a class=&quot;comment-dele&quot; href=&quot;javascript:;&quot;&gt;回复&lt;/a&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;div class=&quot;comment&quot; user=&quot;self&quot;&gt;   &lt;div class=&quot;comment-left&quot;&gt;&lt;img src=&quot;images/T1.jpg&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;   &lt;div class=&quot;comment-right&quot;&gt;   &lt;div class=&quot;comment-text&quot;&gt;&lt;span class=&quot;user&quot;&gt;我：&lt;/span&gt;看哭了留卡号吧&lt;/div&gt;   &lt;div class=&quot;comment-date&quot;&gt;02-14 24:00   &lt;a class=&quot;comment-zan&quot; href=&quot;javascript:;&quot; total=&quot;0&quot; my=&quot;0&quot;&gt;赞&lt;/a&gt;   &lt;a class=&quot;comment-dele&quot; href=&quot;javascript:;&quot;&gt;删除&lt;/a&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;div class=&quot;hf&quot;&gt;   &lt;textarea type=&quot;text&quot; class=&quot;hf-text&quot; autocomplete=&quot;off&quot; maxlength=&quot;100&quot;&gt;评论…&lt;/textarea&gt;   &lt;button class=&quot;hf-btn&quot;&gt;回复&lt;/button&gt;   &lt;span class=&quot;hf-nub&quot;&gt;0/100&lt;/span&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;/li&gt;   &lt;li class=&quot;list0&quot;&gt;   &lt;a class=&quot;close&quot; href=&quot;javascript:;&quot;&gt;X&lt;/a&gt;   &lt;div class=&quot;head&quot;&gt;&lt;img src=&quot;images/T2.jpg&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;      &lt;div class=&quot;content&quot;&gt;   &lt;p class=&quot;text&quot;&gt;&lt;span class=&quot;name&quot;&gt;Andy：&lt;/span&gt;哈哈哈哈哈谁还没个妈～//@我的朋友是个呆B: 饮水机那个蕾丝罩我给跪了//@八卦_我实在是太CJ了:仿佛看到了自己家&lt;/p&gt;      &lt;div class=&quot;pic&quot;&gt;&lt;img src=&quot;images/img1.jpg&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;   &lt;div class=&quot;good&quot;&gt;&lt;span class=&quot;date&quot;&gt;02-14 23:01&lt;/span&gt;&lt;a class=&quot;dzan&quot; href=&quot;javascript:;&quot;&gt;赞&lt;/a&gt;&lt;/div&gt;   &lt;div class=&quot;people&quot; total=&quot;0&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;   &lt;div class=&quot;comment-list&quot;&gt;   &lt;div class=&quot;comment&quot; user=&quot;self&quot;&gt;   &lt;div class=&quot;comment-left&quot;&gt;&lt;img src=&quot;images/T2.jpg&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;   &lt;div class=&quot;comment-right&quot;&gt;   &lt;div class=&quot;comment-text&quot;&gt;&lt;span class=&quot;user&quot;&gt;我：&lt;/span&gt;看哭了留卡号吧&lt;/div&gt;   &lt;div class=&quot;comment-date&quot;&gt;02-14 24:00   &lt;a class=&quot;comment-zan&quot; href=&quot;javascript:;&quot; total=&quot;286&quot; my=&quot;1&quot;&gt;286 取消赞&lt;/a&gt;   &lt;a class=&quot;comment-dele&quot; href=&quot;javascript:;&quot;&gt;删除&lt;/a&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;div class=&quot;hf&quot;&gt;   &lt;textarea type=&quot;text&quot; class=&quot;hf-text&quot; autocomplete=&quot;off&quot; maxlength=&quot;100&quot;&gt;评论…&lt;/textarea&gt;   &lt;button class=&quot;hf-btn&quot;&gt;回复&lt;/button&gt;   &lt;span class=&quot;hf-nub&quot;&gt;0/100&lt;/span&gt;   &lt;/div&gt;   &lt;/div&gt;   &lt;/li&gt;&lt;/ul&gt;&lt;script type=&quot;text/javascript&quot;&gt;//在页面加载完后立即执行多个函数。function addloadEvent(func){    var oldonload=window.onload;    if(typeof window.onload !=&quot;function&quot;){        window.onload=func;    }    else{        window.onload=function(){            if(oldonload){               oldonload();             }            func();        }    }}addloadEvent(b);function b(){var pn=document.getElementById(&quot;pn&quot;);var lists=pn.children;//删除当前节点function remove(node){node.parentNode.removeChild(node);}//上面的点赞function praisebox(box,el){//获取赞数量容器var praise=box.getElementsByClassName(&quot;people&quot;)[0];//获取容器当前total值var total=parseInt(praise.getAttribute(&quot;total&quot;));//获取点击的innerHTMLvar txt=el.innerHTML;//创建一个新的total存储用var newtotal;//判断点击的文字内容if(txt==&quot;赞&quot;){//total值+1  因为我还没点击赞，所以要点击的时候就多了一个人 total+1newtotal=total+1;//判断赞数量 把相应文字放到赞容器里praise.innerHTML=newtotal==1 ? &quot;我觉得很赞&quot; : &quot;我和&quot; + total +&quot;个人觉得很赞&quot;;el.innerHTML=&quot;取消赞&quot;;}else{//反之total值-1newtotal=total-1;praise.innerHTML=newtotal==0 ? &quot;&quot; : newtotal +&quot;个人觉得很赞&quot;;el.innerHTML=&quot;赞&quot;;}//更新total值praise.setAttribute(&quot;total&quot;,newtotal);//如果没有人点赞容器隐藏praise.style.display=(newtotal==0) ? &quot;none&quot; : &quot;block&quot;;}//回复评论function reply(box){//获取评论框var textarea=box.getElementsByTagName(&quot;textarea&quot;)[0];//获取包含所有评论的容器var comment=box.getElementsByClassName(&quot;comment-list&quot;)[0];//创建新的评论divvar div=document.createElement(&quot;div&quot;);//赋类名div.className=&quot;comment&quot;;//设置属性div.setAttribute(&quot;user&quot;,&quot;self&quot;);//获取每条评论的innerHTML结构，每次只替换textarea的输入内容和 当前发送时间var html='&lt;div class=&quot;comment-left&quot;&gt;'+'&lt;img src=&quot;images/T2.jpg&quot; alt=&quot;&quot;/&gt;'+'&lt;/div&gt;'+   '&lt;div class=&quot;comment-right&quot;&gt;'+   '&lt;div class=&quot;comment-text&quot;&gt;&lt;span&gt;我：&lt;/span&gt;'+textarea.value+'&lt;/div&gt;'+   '&lt;div class=&quot;comment-date&quot;&gt;'+   getTime()+   '&lt;a class=&quot;comment-zan&quot; href=&quot;javascript:;&quot; total=&quot;0&quot; my=&quot;0&quot;&gt;赞&lt;/a&gt;'+   '&lt;a class=&quot;comment-dele&quot; href=&quot;javascript:;&quot;&gt;删除&lt;/a&gt;'+   '&lt;/div&gt;'+   '&lt;/div&gt;';   //插入到新建的评论div   div.innerHTML=html;   //把新评论插入到评论列表   comment.appendChild(div);   //评论后初始化textarea输入框   textarea.value=&quot;评论…&quot;;   textarea.parentNode.className=&quot;hf&quot;;}//获取当前时间回复评论时调用function getTime(){var t=new Date();var y=t.getFullYear();var m=t.getMonth()+1;var d=t.getDate();var h=t.getHours();var mi=t.getMinutes();m=m&lt;10?&quot;0&quot;+m:m;d=d&lt;10?&quot;0&quot;+d:d;h=h&lt;10?&quot;0&quot;+h:h;mi=mi&lt;10?&quot;0&quot;+mi:mi;return y+&quot;-&quot;+m+&quot;-&quot;+d+&quot;&quot;+h+&quot;:&quot;+mi;}//回复里点赞function praiseReply(el){//获取当前total值 也就是所有点赞数量var total=parseInt(el.getAttribute(&quot;total&quot;));//获取当前my值 我的点赞var my=parseInt(el.getAttribute(&quot;my&quot;));//创建新的totalvar newtotal;//判断my=0就是我准备要点赞if(my==0){//我点了赞总数量就要+1newtotal=total+1;//更新total值el.setAttribute(&quot;total&quot;,newtotal);//更新my值el.setAttribute(&quot;my&quot;,1);//更新文字  就是我点了后 文字就是取消赞了el.innerHTML=newtotal+&quot; 取消赞&quot;;}else{//反之-1newtotal=total-1;el.setAttribute(&quot;total&quot;,newtotal);el.setAttribute(&quot;my&quot;,0);el.innerHTML=(newtotal==0)?&quot; 赞&quot;:newtotal+&quot; 赞&quot;;}}//操作回复function operateReply(el){//每条评论var comment=el.parentNode.parentNode.parentNode;//整个状态var box=comment.parentNode.parentNode.parentNode;//评论框var textarea=box.getElementsByTagName(&quot;textarea&quot;)[0];//名字var user=comment.getElementsByClassName(&quot;user&quot;)[0];//点击的innerHTMLvar txt=el.innerHTML;//判断当前点击的是否为回复if(txt==&quot;回复&quot;){//评论框触发焦点事件 也就是变高textarea.onfocus();//内容变为回复+当前人的名字textarea.value=&quot;回复 &quot;+user.innerHTML;//调用键盘事件textarea.onkeyup();}else{//否则就是删除节点remove(comment);}}//遍历所有状态消息for(var i=0;i&lt;lists.length;i++){//全部事件代理lists[i].onclick=function(e){//获取当前点击事件var e=e||window.event;var el=e.srcElement;if(!el){el=e.target;//兼容火狐}//判断点击的类名switch(el.className){//关闭整个状态case &quot;close&quot;:remove(el.parentNode);break;//上面的点赞case &quot;dzan&quot;:praisebox(el.parentNode.parentNode.parentNode,el);break;//回复评论case &quot;hf-btn hf-btn-on&quot;:reply(el.parentNode.parentNode.parentNode);break;//每条评论中点赞case &quot;comment-zan&quot;:praiseReply(el);break;case &quot;comment-dele&quot;:operateReply(el);break;}}var textarea=lists[i].getElementsByClassName(&quot;hf-text&quot;)[0];//焦点事件textarea.onfocus=function(){this.parentNode.className='hf hf-on';this.value = this.value == '评论…' ? '' : this.value;}//失焦事件textarea.onblur=function(){if(this.value==''){this.parentNode.className='hf';this.value ='评论…';}}//键盘事件textarea.onkeyup=function(){var len=this.value.length;var textParentNode=this.parentNode;var textBtn=textParentNode.children[1];var textNub=textParentNode.children[2];if(len==0 /*|| len&gt;100*/){textBtn.className=&quot;hf-btn&quot;;}else{textBtn.className=&quot;hf-btn hf-btn-on&quot;;/*this.style.color=&quot;#333&quot;;*/}textNub.innerHTML=len+&quot;/100&quot;;}}//遍历结束}&lt;/script&gt;&lt;/body&gt; &lt;/html&gt;</find>
+      <find>stateShow</find>
+      <find>hf-btn</find>
       <find>mainBanner</find>
+      <find>hf-text</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -88,17 +126,20 @@
         <option value="$PROJECT_DIR$/../index.html" />
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/assets/css/weibo.css" />
         <option value="$PROJECT_DIR$/config/CustomerIndex.js" />
-        <option value="$PROJECT_DIR$/setting.html" />
-        <option value="$PROJECT_DIR$/register.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/config/config.js" />
-        <option value="$PROJECT_DIR$/weibo.html" />
-        <option value="$PROJECT_DIR$/myweibo.html" />
-        <option value="$PROJECT_DIR$/config/app.js" />
         <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/register.html" />
+        <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/setting.html" />
+        <option value="$PROJECT_DIR$/friend.html" />
+        <option value="$PROJECT_DIR$/config/reply.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/weibo.css" />
+        <option value="F:/迅雷下载/w3cfuns_code.html" />
+        <option value="$PROJECT_DIR$/myweibo.html" />
+        <option value="$PROJECT_DIR$/weibo.html" />
+        <option value="$PROJECT_DIR$/config/app.js" />
       </list>
     </option>
   </component>
@@ -132,7 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -159,9 +199,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campusweibo-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campusweibo-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campusweibo-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="campusweibo-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,12 +345,15 @@
       <workItem from="1494503927086" duration="2636000" />
       <workItem from="1494855099495" duration="3322000" />
       <workItem from="1495013263221" duration="15270000" />
-      <workItem from="1495188870871" duration="216000" />
+      <workItem from="1495188870871" duration="4787000" />
+      <workItem from="1495220298650" duration="7699000" />
+      <workItem from="1495232251987" duration="9027000" />
+      <workItem from="1495280764589" duration="50870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130653000" />
+    <option name="totallyTimeSpent" value="202820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
@@ -287,18 +363,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,34 +385,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="58" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -349,9 +402,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -360,9 +411,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -371,9 +420,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -396,9 +443,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="988">
           <caret line="52" column="78" lean-forward="false" selection-start-line="52" selection-start-column="78" selection-end-line="52" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -444,41 +489,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/jquery.backstretch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/login.css" />
-    <entry file="file://$PROJECT_DIR$/assets/js/placeholder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../index.html" />
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js" />
-    <entry file="file://$PROJECT_DIR$/config/CustomerIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="223" column="45" lean-forward="true" selection-start-line="223" selection-start-column="45" selection-end-line="223" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/angular-aria/angular-aria.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="349" column="11" lean-forward="false" selection-start-line="349" selection-start-column="11" selection-end-line="349" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -487,41 +504,6 @@
         <state relative-caret-position="95">
           <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/weibo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="108" column="88" lean-forward="false" selection-start-line="108" selection-start-column="88" selection-end-line="108" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweibo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1256">
-          <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -565,37 +547,174 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery.backstretch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/placeholder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="473">
+          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/friend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#2734#2741#0" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#5420#9595#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="100" column="99" lean-forward="false" selection-start-line="100" selection-start-column="99" selection-end-line="100" selection-end-column="99" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        <state relative-caret-position="-76">
+          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="483">
+          <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/CustomerIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <marker date="1493106079884" expanded="true" signature="3089:3101" ph="..." />
+            <marker date="1493106079884" expanded="true" signature="3105:3111" ph=" " />
+            <marker date="1493106079884" expanded="true" signature="6069:6081" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/weibo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1163">
+          <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweibo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="196" column="37" lean-forward="true" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#2724#2731#0" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/reply.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc;n#addloadEvent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/迅雷下载/w3cfuns_code.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="314" column="18" lean-forward="false" selection-start-line="314" selection-start-column="18" selection-end-line="314" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="123" column="64" lean-forward="true" selection-start-line="123" selection-start-column="64" selection-end-line="123" selection-end-column="64" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#2736#2743#0" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#11156#14827#0" expanded="false" />
+            <marker date="1495381855715" expanded="false" signature="11923:11935" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="176" column="50" lean-forward="true" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+          <folding>
+            <element signature="e#2724#2731#0" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#8327#8333#0" expanded="true" />
+            <element signature="e#9628#9635#0" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="195" column="5" lean-forward="true" selection-start-line="195" selection-start-column="5" selection-end-line="195" selection-end-column="5" />
+          <folding>
+            <element signature="e#179#1041#0" expanded="false" />
+            <element signature="e#1104#2173#0" expanded="false" />
+            <element signature="e#9370#14657#0" expanded="false" />
+            <element signature="e#10729#11760#0" expanded="false" />
+            <element signature="e#11807#12528#0" expanded="false" />
+            <element signature="e#14720#17327#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
