@@ -132,7 +132,7 @@
                                         <tr>
                                             <td width="70" align="center" valign="top">
                                                 <a href="#">
-                                                <img src="images/avatar/default.jpg" alt="" width="48" height="48" />
+                                                <img src="{{x.image_url}}" alt="" width="48" height="48" />
                                                 </a>
                                                 <br>
                                                 {{x.nickname}}
@@ -152,7 +152,7 @@
                                     <div class="comment" ng-repeat="r in x.myReplyList">
                                         <div class="comment-left"><img src="images/avatar/default.jpg" alt="" width="5" height="5"/></div>
                                         <div class="comment-right">
-                                            <div class="comment-text"><span class="user">老王：</span>{{r.text}}</div>
+                                            <div class="comment-text"><span class="user"></span>{{r.text}}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -167,6 +167,9 @@
                                                 <h5 class="modal-title" id="myModalLabel1" style="color: black">
                                                     {{x.weibo.id}}
                                                 </h5>
+                                                <div hide="false">
+                                                    {{x.weibo.id}}
+                                                </div>
                                             </div>
                                             <div class="modal-body">
                                                 <textarea ng-model="replytext" name="textfield1" rows="4"  style="overflow:hidden;border:1px #0CF solid;" onkeyup="calNum(this,counter1,0)"></textarea>

@@ -59,8 +59,10 @@ app.controller('registerController', function($scope,$http){
                 // window.location.reload();
                 $scope.authregError="注册失败!"
             }
-            if(data.returnInfo == "0000"){
-                window.location.href("#/");
+            if(data.returnCode == "0"){
+                // window.location.reload();
+                // $scope.authregError="注册失败!"
+                window.location.href = '#/';
             }
         }).error(function (data, header, config, status) {
             // 响应失败
@@ -89,9 +91,9 @@ app.controller('weiboController', function($scope,$http){
 
     $scope.cusname=JSON.parse(localStorage.message).data.nickname;
     $scope.cusimg = JSON.parse(localStorage.message).data.image_url;
-    if(this.cusimg == null){
-        $scope.cusimg = "images/avatar/default.jpg";
-    }
+    // if(this.cusimg == null){
+    //     $scope.cusimg = "images/avatar/default.jpg";
+    // }
     $scope.cusfriendnum = JSON.parse(localStorage.message).frenum;
     $scope.cusweibonum = JSON.parse(localStorage.message).weibonum;
     $scope.weibolist = JSON.parse(localStorage.message).weiboinfo;
@@ -190,7 +192,8 @@ app.controller('weiboController', function($scope,$http){
     }
 
     $scope.replytext = "";
-    
+    $scope.weiboid="";
+
     $scope.addreply = function () {
         
     }
@@ -202,9 +205,9 @@ app.controller('myweiboController',function ($scope,$http) {
     $scope.cusname=JSON.parse(localStorage.message).data.nickname;
     $scope.cusimg = JSON.parse(localStorage.message).data.image_url;
     $scope.userid=JSON.parse(localStorage.message).data.id;
-    if(this.cusimg == null){
-        $scope.cusimg = "images/avatar/default.jpg";
-    }
+    // if(this.cusimg == null){
+    //     $scope.cusimg = "images/avatar/default.jpg";
+    // }
     $scope.mysearchinfo="";
     $scope.searchresultinfo = "";
     $scope.friendinfo="";
@@ -323,7 +326,7 @@ app.controller('settingsController',function ($scope,$http) {
             // 响应失败
             $scope.searchresultinfo="服务器响应失败"
         })
-    }
+    };
 
     //搜索好友
     $scope.searchfrid = function () {
@@ -353,7 +356,7 @@ app.controller('settingsController',function ($scope,$http) {
             // 响应失败
             $scope.searchresultinfo="服务器响应失败"
         })
-    }
+    };
 
     //加好友
     $scope.addfriend = function () {
@@ -377,7 +380,7 @@ app.controller('settingsController',function ($scope,$http) {
             // 响应失败
             // $scope.authregError="服务器响应失败"
         })
-    }
+    };
 
     $scope.setnickname = "";
     $scope.setschool = "";
@@ -391,7 +394,7 @@ app.controller('settingsController',function ($scope,$http) {
             schoolcode:$scope.usercode,
             password:JSON.parse(localStorage.message).data.password,
             nickname:$scope.setnickname,
-            image_url:SON.parse(localStorage.message).data.image_url,
+            image_url:JSON.parse(localStorage.message).data.image_url,
             sex:$scope.setsex,
             school:$scope.setschool
         }
@@ -416,7 +419,7 @@ app.controller('settingsController',function ($scope,$http) {
             $scope.settingMessage="服务器响应错误"
         })
 
-    }
+    };
 
     $scope.oldpwd = "";
     $scope.newpwd = "";
@@ -452,10 +455,9 @@ app.controller('settingsController',function ($scope,$http) {
             $scope.settingMessage="服务器响应错误"
         })
 
-    }
+    };
 
 });
-
 
 app.controller('friendController',function ($scope,$http) {
     $scope.mysearchinfo="";

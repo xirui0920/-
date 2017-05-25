@@ -15,6 +15,8 @@ public class WeiboDTO implements Serializable{
 
     private String nickname;
 
+    private String image_url;
+
     private List<MyReply> myReplyList;
 
     public WeiboDTO(Weibo weibo,String nickname){
@@ -22,10 +24,31 @@ public class WeiboDTO implements Serializable{
         this.nickname = nickname;
     }
 
+    public WeiboDTO(Weibo weibo, String nickname, String image_url) {
+        this.weibo = weibo;
+        this.nickname = nickname;
+        this.image_url = image_url;
+    }
+
     public WeiboDTO(Weibo weibo, String nickname, List<MyReply> myReplyList) {
         this.weibo = weibo;
         this.nickname = nickname;
         this.myReplyList = myReplyList;
+    }
+
+    public WeiboDTO(Weibo weibo, String nickname, String image_url, List<MyReply> myReplyList) {
+        this.weibo = weibo;
+        this.nickname = nickname;
+        this.image_url = image_url;
+        this.myReplyList = myReplyList;
+    }
+
+    public String getImage_url() {
+        return image_url;
+    }
+
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
     }
 
     public Weibo getWeibo() {
@@ -57,6 +80,7 @@ public class WeiboDTO implements Serializable{
         return "WeiboDTO{" +
             "weibo=" + weibo +
             ", nickname='" + nickname + '\'' +
+            ", image_url='" + image_url + '\'' +
             ", myReplyList=" + myReplyList +
             '}';
     }

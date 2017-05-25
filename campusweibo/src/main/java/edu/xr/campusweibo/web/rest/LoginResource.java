@@ -91,8 +91,8 @@ public class LoginResource {
         for (int i = 0;i < friendList.size();i++){
             List<Weibo> newweiboList = weiboService.getAllWeibo(friendList.get(i).getFuid());
             for (int j=0;j < newweiboList.size();j++){
-                myReplyList = myReplyService.getAllReply(newweiboList.get(i).getId());
-                listDTO.add(new WeiboDTO(newweiboList.get(j),loginService.getUserById(friendList.get(i).getFuid()).getNickname(),myReplyList));
+                myReplyList = myReplyService.getAllReply(newweiboList.get(j).getId());
+                listDTO.add(new WeiboDTO(newweiboList.get(j),loginService.getUserById(friendList.get(i).getFuid()).getNickname(),loginService.getUserById(friendList.get(i).getFuid()).getImage_url(),myReplyList));
             }
         }
         returnMap.put("weiboinfo",listDTO);

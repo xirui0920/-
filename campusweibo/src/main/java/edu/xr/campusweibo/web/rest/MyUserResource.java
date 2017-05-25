@@ -61,11 +61,11 @@ public class MyUserResource {
 //        创建用户
         try {
             myUserService.saveUser(myUser);
+            return new ResponseResult(Constants.SUCCESS_CODE,Constants.SUCCESS_INFO);
         }catch (Exception e){
             log.info("创建新用户异常");
             return new ResponseResult(Constants.FAIL_CODE,Constants.USER_ADD_UPDATE_EXP);
         }
-        return new ResponseResult(Constants.SUCCESS_CODE,Constants.SUCCESS_INFO);
     }
 
 
